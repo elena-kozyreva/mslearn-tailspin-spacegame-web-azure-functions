@@ -102,12 +102,12 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: $(WebAppName)
-              resourceGroupName: $(ResourceGroupName)
+              resourceGroupName: tailspin-space-game-rg-elko
               appSettings: |
                 [
                  {
                    "name": "AppSettings:LeaderboardFunctionUrl",
-                   "value": "https://tailspin-space-game-leaderboard-13853.azurewebsites.net/api/LeaderboardFunction",
+                   "value": "http://$(LeaderboardAppName).azurewebsites.net/api/LeaderboardFunction",
                    "slotSetting": false
                  }
                 ]
