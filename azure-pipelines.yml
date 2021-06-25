@@ -103,7 +103,7 @@ stages:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: $(WebAppName)
               resourceGroupName: $(ResourceGroupName)
-              AppSettings: |
+              appSettings: |
                 [
                  {
                    "name": "AppSettings:LeaderboardFunction",
